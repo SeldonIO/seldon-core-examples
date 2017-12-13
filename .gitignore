@@ -4,3 +4,4 @@
 *.gz
 *.sav
 *.h5
+*.DS_Store
