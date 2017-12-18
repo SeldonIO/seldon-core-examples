@@ -175,13 +175,9 @@ class MnistConv(object):
         return self
     
     def predict_proba(self,X):
-        if os.path.exists('saved_model'):
-            self.model = load_model('saved_model/model.h5')
         return self.model.predict_proba(X)
     
     def predict(self, X):
-        if os.path.exists('saved_model'):
-            self.model = load_model('saved_model/model.h5')
         probas = self.model.predict_proba(X)
         return([[p>0.5 for p in p1] for p1 in probas])
         
@@ -202,8 +198,6 @@ X_train = X_train.reshape((len(X_train),28,28,1))
 X_test = X_test.reshape((len(X_test),28,28,1))
 
 def main():
-    #print '800A'
-    #pass
     mc = MnistConv((28,28,1),10)
     mc.fit(X_train,y=y_train,
            X_test=X_test,y_test=y_test)
