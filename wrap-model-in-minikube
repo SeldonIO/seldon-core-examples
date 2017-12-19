@@ -22,6 +22,7 @@ if [ ${UNAME_S} = "Linux" ]; then
 fi
 
 set -x
+eval $(minikube docker-env)
 docker run --rm -it \
     -v ${BASE_VM_DIR}:/work seldonio/core-pyhton-wrapper:0.2 \
     bash -c "rm -rfv /work/build && cd /wrappers/python && python wrap_model.py /work $WRAP_MODEL_PARAMS && ls -1 /work/build"
