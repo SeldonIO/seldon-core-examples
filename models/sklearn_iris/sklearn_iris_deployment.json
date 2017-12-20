@@ -10,7 +10,7 @@
     "spec": {
         "annotations": {
             "project_name": "Iris classification",
-            "deployment_version": "0.0"
+            "deployment_version": "0.1"
         },
         "name": "sklearn-iris-deployment",
         "oauth_key": "oauth-key",
@@ -46,7 +46,7 @@
                 "name": "sklearn-iris-predictor",
                 "replicas": 1,
                 "annotations": {
-                "predictor_version" : "0.0"
+                "predictor_version" : "0.1"
                 }
             }
         ]
