@@ -27,5 +27,5 @@ docker run --rm -it \
     -v ${BASE_VM_DIR}:/work seldonio/core-python-wrapper:0.3 \
     bash -c "rm -rfv /work/build && cd /wrappers/python && python wrap_model.py /work $WRAP_MODEL_PARAMS && ls -1 /work/build"
 set +x
-(cd build && make build_docker_image)
+cd build && make build_docker_image
 
