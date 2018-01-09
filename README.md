@@ -11,7 +11,7 @@ The repository contains two wrapping scripts at the moment
 ## Examples
 
 The examples in the "models" folder are out-of-the-box machine learning models packaged as required by seldon wrappers. Each model folder usually includes a script to create and save the model, a model python file and a requirements file.
-As an example, we describe the content of the folder  "models/sklearn_iris". Check out [seldon wrappers guidelines]((https://github.com/SeldonIO/seldon-core/blob/master/docs/wrappers/readme.md)) for more details about packaging models.
+As an example, we describe the content of the folder  "models/sklearn_iris". Check out [seldon wrappers guidelines](https://github.com/SeldonIO/seldon-core/blob/master/docs/wrappers/readme.md)) for more details about packaging models.
 
 * train_iris.py : Script to train and save a sklearn iris classifier
 * IrisClassifier.py : The file used by seldon-wrappers to load and serve your saved model.
