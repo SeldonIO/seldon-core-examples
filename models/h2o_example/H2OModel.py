@@ -15,7 +15,7 @@ def _from_frame(frame):
     preds = h2o.as_list(frame,use_pandas=False); preds.pop(0); [r.pop(0) for r in preds]
     return np.asarray(preds,dtype=np.float)
 
-class H2oModel():
+class H2OModel():
     
     def __init__(self):
         
